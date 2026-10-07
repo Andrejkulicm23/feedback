@@ -1,0 +1,74 @@
+.feedback-root {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+.feedback-card {
+  width: 100%;
+  max-width: 760px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+.feedback-title {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.emoji-row {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin: 12px 0 16px;
+}
+.emoji-btn {
+  font-size: 48px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  cursor: pointer;
+}
+.emoji-btn.selected {
+  outline: 2px solid #2563eb;
+  background: #eef2ff;
+  transform: scale(1.12);
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+.field input,
+.field textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.submit {
+  background: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.error {
+  color: #b91c1c;
+}
+.feedback-thanks {
+  text-align: center;
+  padding: 40px;
+}
